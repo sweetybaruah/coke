@@ -1,0 +1,619 @@
+/* Common styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.ppa_hidden {
+    display: none;
+}
+
+.ppa_abs {
+    position: absolute;
+}
+
+/* Extra large devices desktop */
+@media only screen and (max-width: 2100px) {
+    .ppa_wrapper {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-size: 100% 100%;
+        overflow: hidden;
+        /* border: 2px solid blue; */
+        /* background-color: brown; */
+        background: url('./assets2/bg-lap.png') no-repeat;
+        background-size: contain;
+    }
+ 
+    .soundbox{
+        background: url('./assets2/scene1/speaker1.png') no-repeat;
+        width: 565px; 
+        height: 356px; 
+        max-width: 565px; 
+        max-height: 356px; 
+        transform: scale(0.8); 
+        top: 257px; 
+        left: 561px; 
+    }
+    .soundbox2{
+        background: url('./assets2/scene2/2.png') no-repeat;
+        width: 565px; 
+        height: 356px; 
+        max-width: 565px; 
+        max-height: 356px; 
+        transform: scale(0.8); 
+        top: 243px; 
+        left: 546px; 
+        z-index: 8;
+    }
+
+    .cokebtl{
+        background: url('./assets2/scene1/coke1.png') no-repeat;
+        width: 373px; 
+        height: 573px; 
+        max-width: 373px; 
+        max-height: 573px; 
+        transform: scale(0.8); 
+        top: 124px; 
+        left: 216px; 
+
+    }
+    .cokebtl2{
+        background: url('./assets2/scene2/coke2.png') no-repeat;
+        width: 373px; 
+        height: 573px; 
+        max-width: 373px; 
+        max-height: 573px; 
+        transform: scale(0.8); 
+        top: 110px; 
+        left: 215px; 
+
+    }
+   
+    .guitar{
+        background: url('./assets2/scene1/guitar1.png') no-repeat;
+        width: 565px; 
+        height: 551px; 
+        max-width: 565px; 
+        max-height: 551px; 
+        transform: scale(0.8); 
+        top: 130px; 
+        left: 1108px; 
+    }
+
+    .guitar2{
+        background: url('./assets2/scene2/guitar2.png') no-repeat;
+        width: 600px; 
+        height: 600px; 
+        max-width: 600px; 
+        max-height: 600px; 
+        transform: scale(0.8); 
+        top: 112px; 
+        left: 1090px; 
+    }
+    .wire{
+        background: url('./assets2/scene1/plug1.png') no-repeat;
+        width: 1421px; 
+        height: 222px; 
+        max-width: 1421px; 
+        max-height: 222px; 
+        transform: scale(.9); 
+        top: 492px; 
+        left: -270px; 
+        z-index: 2;
+
+    }
+    .wire2{
+        background: url('./assets2/scene2/plug2.png') no-repeat;
+        width: 1421px; 
+        height: 222px; 
+        max-width: 1421px; 
+        max-height: 222px; 
+        transform: scale(.9); 
+        top: 504px; 
+        left: -114px; 
+        z-index: 99;
+
+    }
+    .copy{
+        background: url('./assets2/scene1/text.png') no-repeat;
+        width: 411px; 
+        height: 124px; 
+        max-width: 411px; 
+        max-height: 124px; 
+        transform: scale(.7); 
+        top: 403px; 
+        left: 624px; 
+       
+    }
+    .bg{
+        background: url('./assets2/scene2/bgpattern.png') no-repeat;
+        width: 1920px; 
+        height: 1080px; 
+        max-width: 1920px; 
+        max-height: 1080px; 
+        top: 0px; 
+        left: 0px; 
+    }
+
+    .l_effect{
+        background: url('./assets2/scene2/speakerEffectL.png') no-repeat;
+        width: 124px; 
+        height: 181px; 
+        max-width: 124px; 
+        max-height: 181px; 
+        transform: scale(.8); 
+        top: 388px; 
+        left: 611px; 
+        z-index: 9;
+       
+    }
+
+    .m_effect{
+        background: url('./assets2/scene2/speakerEffectC.png') no-repeat;
+        width: 256px; 
+        height: 256px; 
+        max-width: 256px; 
+        max-height: 256px; 
+        transform: scale(.8); 
+        top: 338px; 
+        left: 716px; 
+        z-index: 9;
+    }
+    .r_effect{
+        background: url('./assets2/scene2/speakerEffectR.png') no-repeat;
+        width: 124px; 
+        height: 181px; 
+        max-width: 124px; 
+        max-height: 181px; 
+        transform: scale(.8); 
+        top: 386px; 
+        left: 951px; 
+        z-index: 9;
+       
+    }
+
+    .wave{
+        background: url('./assets2/scene2/wave.png') no-repeat;
+        width: 428px; 
+        height: 428px; 
+        max-width: 428px; 
+        max-height: 428px; 
+        transform: scale(.7); 
+        top: -38px; 
+        left: 637px; 
+        z-index: 1;
+       
+    }
+
+    
+    .cokeLogo{
+        background: url('./assets2/scene2/logo.png') no-repeat;
+        width: 270px; 
+        height: 270px; 
+        max-width: 270px; 
+        max-height: 270px; 
+        transform: scale(.8); 
+        top: 42px; 
+        left: 715px; 
+        z-index: 1;
+       
+    }
+
+
+    .fade-out {
+        opacity: 0;
+        transition: opacity 0.5s ease-out;
+    }
+
+
+    .ease-in {
+        opacity: 1;
+        transition: opacity 0.5s ease-in;
+    }
+
+    
+    
+}
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1300px) {
+    .ppa_wrapper {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-size: 100% 100%;
+        overflow: hidden;
+        /* border: 2px solid blue; */
+        /* background-color: brown; */
+        background: url('./assets2/bg-lap.png') no-repeat;
+        background-size: contain;
+    }
+ 
+    .soundbox{
+        background: url('./assets2/scene1/speaker1.png') no-repeat;
+        width: 565px; 
+        height: 356px; 
+        max-width: 565px; 
+        max-height: 356px; 
+        transform: scale(0.7); 
+        top: 150px; 
+        left: 350px; 
+    }
+    .soundbox2{
+        background: url('./assets2/scene2/2.png') no-repeat;
+        width: 582px; 
+        height: 356px; 
+        max-width: 589px; 
+        max-height: 356px; 
+        transform: scale(0.7); 
+        top: 135px; 
+        left: 334px; 
+        z-index: 8;
+    }
+
+    .cokebtl{
+        background: url('./assets2/scene1/coke1.png') no-repeat;
+        width: 373px; 
+        height: 573px; 
+        max-width: 373px; 
+        max-height: 573px; 
+        transform: scale(0.7); 
+        top: -20px; 
+        left: 50px; 
+
+    }
+    .cokebtl2{
+        background: url('./assets2/scene2/coke2.png') no-repeat;
+        width: 373px; 
+        height: 573px; 
+        max-width: 373px; 
+        max-height: 573px; 
+        transform: scale(0.7); 
+        top: -42px; 
+        left: 49px; 
+
+    }
+   
+    .guitar{
+        background: url('./assets2/scene1/guitar1.png') no-repeat;
+        width: 565px; 
+        height: 551px; 
+        max-width: 565px; 
+        max-height: 551px; 
+        transform: scale(0.6); 
+        top: -20px; 
+        left: 780px; 
+    }
+
+    .guitar2{
+        background: url('./assets2/scene2/guitar2.png') no-repeat;
+        width: 600px; 
+        height: 600px; 
+        max-width: 600px; 
+        max-height: 600px; 
+        transform: scale(0.6); 
+        top: -40px; 
+        left: 763px; 
+    }
+    .wire{
+        background: url('./assets2/scene1/plug1.png') no-repeat;
+        width: 1421px; 
+        height: 222px; 
+        max-width: 1421px; 
+        max-height: 222px; 
+        transform: scale(.9); 
+        top: 250px; 
+        left: -570px; 
+        z-index: 2;
+
+    }
+    .wire2{
+        background: url('./assets2/scene2/plug2.png') no-repeat;
+        width: 1421px; 
+        height: 222px; 
+        max-width: 1421px; 
+        max-height: 222px; 
+        transform: scale(.9); 
+        top: 304px; 
+        left: -401px; 
+        z-index: 99;
+
+    }
+    .copy{
+        background: url('./assets2/scene1/text.png') no-repeat;
+        width: 411px; 
+        height: 124px; 
+        max-width: 411px; 
+        max-height: 124px; 
+        transform: scale(.7); 
+        top: 250px; 
+        left: 420px; 
+       
+    }
+    .bg{
+        background: url('./assets2/scene2/bgpattern.png') no-repeat;
+        width: 1920px; 
+        height: 1080px; 
+        max-width: 1920px; 
+        max-height: 1080px; 
+        top: 0px; 
+        left: 0px; 
+    }
+
+    .l_effect{
+        background: url('./assets2/scene2/speakerEffectL.png') no-repeat;
+        width: 124px; 
+        height: 181px; 
+        max-width: 124px; 
+        max-height: 181px; 
+        transform: scale(.7); 
+        top: 274px; 
+        left: 421px; 
+        z-index: 9;
+       
+    }
+
+    .m_effect{
+        background: url('./assets2/scene2/speakerEffectC.png') no-repeat;
+        width: 256px; 
+        height: 256px; 
+        max-width: 256px; 
+        max-height: 256px; 
+        transform: scale(.7); 
+        top: 226px; 
+        left: 503px; 
+        z-index: 9;
+       
+    }
+    .r_effect{
+        background: url('./assets2/scene2/speakerEffectR.png') no-repeat;
+        width: 124px; 
+        height: 181px; 
+        max-width: 124px; 
+        max-height: 181px; 
+        transform: scale(.7); 
+        top: 274px; 
+        left: 717px; 
+        z-index: 9;
+       
+    }
+
+    .wave{
+        background: url('./assets2/scene2/wave.png') no-repeat;
+        width: 428px; 
+        height: 428px; 
+        max-width: 428px; 
+        max-height: 428px; 
+        transform: scale(.7); 
+        top: -38px; 
+        left: 437px; 
+        z-index: 1;
+       
+    }
+
+    
+    .cokeLogo{
+        background: url('./assets2/scene2/logo.png') no-repeat;
+        width: 270px; 
+        height: 270px; 
+        max-width: 270px; 
+        max-height: 270px; 
+        transform: scale(.8); 
+        top: 42px; 
+        left: 516px; 
+        z-index: 1;
+       
+    }
+
+
+    .fade-out {
+        opacity: 0;
+        transition: opacity 0.5s ease-out;
+    }
+
+
+    .ease-in {
+        opacity: 1;
+        transition: opacity 0.5s ease-in;
+    }
+
+    
+    
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .ppa_wrapper {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: url('./assets2/bg.jpg') no-repeat;
+        background-color: bisque;
+        background-size: cover;
+    }
+    .soundbox{
+        background: url('./assets2/scene1/speaker1.png') no-repeat;
+        width: 546px; 
+        height: 185px; 
+        max-width: 546px; 
+        max-height: 185px; 
+        transform: scale(0.3); 
+        top: 394px; 
+        left: -82px;  
+    }
+
+    .soundbox2{
+        background: url('./assets2/scene2/2.png') no-repeat;
+        width: 992px; 
+        height: 757px; 
+        max-width: 992px; 
+        max-height: 757px; 
+        transform: scale(0.3); 
+        top: 152px; 
+        left: -247px;  
+    }
+
+
+     .cokebtl{
+        background: url('./assets2/scene1/coke1.png') no-repeat;
+        width: 546px; 
+        height: 588px; 
+        max-width: 546px; 
+        max-height: 588px; 
+        transform: scale(0.3); 
+        top: 173px; 
+        left: -191px; 
+
+    }
+
+    .cokebtl2{
+        background: url('./assets2/scene2/coke2.png') no-repeat;
+        width: 546px; 
+        height: 588px; 
+        max-width: 546px; 
+        max-height: 588px; 
+        transform: scale(0.3); 
+        top: 173px; 
+        left: -191px; 
+
+    }
+   
+    .guitar{
+        background: url('./assets2/scene1/guitar1.png') no-repeat;
+        width: 546px; 
+        height: 588px; 
+        max-width: 546px; 
+        max-height: 588px; 
+        transform: scale(0.3); 
+        top: 172px; 
+        left: 94px; 
+
+    }
+    .guitar2{
+        background: url('./assets2/scene2/guitar2.png') no-repeat;
+        width: 546px; 
+        height: 588px; 
+        max-width: 546px; 
+        max-height: 588px; 
+        transform: scale(0.3); 
+        top: 164px; 
+        left: 80px; 
+    }
+  
+    .wire{
+        background: url('./assets2/scene1/plug1.png') no-repeat;
+        width: 2200px; 
+        height: 2200px; 
+        max-width: 2200px; 
+        max-height: 2200px; 
+        transform: scale(0.7); 
+        top: 121px; 
+        left: -1084px; 
+
+    }
+    .wire2{
+        background: url('./assets2/scene2/plug2.png') no-repeat;
+        width: 2200px; 
+        height: 2200px; 
+        max-width: 2200px; 
+        max-height: 2200px; 
+        transform: scale(0.7); 
+        top: 127px; 
+        left: -1025px; 
+
+    }
+    .copy{
+        background: url('./assets2/scene1/text.png') no-repeat;
+        width: 546px; 
+        height: 185px; 
+        max-width: 546px; 
+        max-height: 185px; 
+        transform: scale(0.3); 
+        top: 411px; 
+        left: -59px; 
+       
+    } 
+
+    .bg{
+        background: url('./assets2/scene2/bgpattern.png') no-repeat;
+        width: 1920px; 
+        height: 1080px; 
+        max-width: 1920px; 
+        max-height: 1080px; 
+        top: 0px; 
+        left: 0px; 
+    }
+
+    .l_effect{
+        background: url('./assets2/scene2/speakerEffectL.png') no-repeat;
+        width: 124px; 
+        height: 181px; 
+        max-width: 124px; 
+        max-height: 181px; 
+        transform: scale(.7); 
+        top: 274px; 
+        left: 421px; 
+        z-index: 9;
+       
+    }
+
+    .m_effect{
+        background: url('./assets2/scene2/speakerEffectC.png') no-repeat;
+        width: 256px; 
+        height: 256px; 
+        max-width: 256px; 
+        max-height: 256px; 
+        transform: scale(.7); 
+        top: 226px; 
+        left: 503px; 
+        z-index: 9;
+       
+    }
+    .r_effect{
+        background: url('./assets2/scene2/speakerEffectR.png') no-repeat;
+        width: 124px; 
+        height: 181px; 
+        max-width: 124px; 
+        max-height: 181px; 
+        transform: scale(.7); 
+        top: 274px; 
+        left: 717px; 
+        z-index: 9;
+       
+    }
+
+    .wave{
+        background: url('./assets2/scene2/wave.png') no-repeat;
+        width: 428px; 
+        height: 428px; 
+        max-width: 428px; 
+        max-height: 428px; 
+        transform: scale(.7); 
+        top: -38px; 
+        left: 437px; 
+        z-index: 1;
+       
+    }
+
+    
+    .cokeLogo{
+        background: url('./assets2/scene2/logo.png') no-repeat;
+        width: 270px; 
+        height: 270px; 
+        max-width: 270px; 
+        max-height: 270px; 
+        transform: scale(.8); 
+        top: 42px; 
+        left: 516px; 
+        z-index: 1;
+       
+    }
+    
+}
+
